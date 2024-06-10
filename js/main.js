@@ -27,11 +27,11 @@ function obtenerDatos() {
 function mostrarDatos(data) {
   if (data.length > 0) {
     let elementos = data[0];
-    titulo.innerHTML = `<h3>${elementos.author || "unknown"}</h3>`;
-    texto.innerHTML = `<p>${elementos.quote}</p>`;
+    titulo.innerHTML = `<h3 class="title">${
+      elementos.author || "unknown"
+    }</h3>`;
+    texto.innerHTML = `<p class="cita">"${elementos.quote}"</p>`;
   }
 }
 
 obtenerDatos();
-
-console.log();
